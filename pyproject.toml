@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "prod-ready-api"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "prod_ready_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^2.3.2"
+numpy = "^1.25.2"
+gunicorn = "^21.2.0"
+pytest = "^7.4.0"
+requests = "^2.31.0"
+flake8 = "^6.1.0"
+black = "^23.7.0"
+flask-script = "^2.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
