@@ -78,8 +78,7 @@ You should see the output indicating Python 3.9.x.
 1. **Clone this repository:**
 
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone <https://github.com/Chatty95/flask_prod_api>
    ```
 Install Python 3.9 if not already installed:
 Download it from python.org.
