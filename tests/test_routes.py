@@ -26,3 +26,14 @@ def test_generate_array(client):
 
     # Assert the response JSON content
     assert response.json == expected_response
+
+
+def test_generate_random_array_missing_sentence(client):
+    """
+    Test generating random array with missing sentence
+    """
+    response = client.post("/api/generate_random_array", json={})
+
+    assert response.status_code == 400
+    assert "error" in response.json  # Ensure "error" key is present in JSON response
+    assert response.json["error"] == "Please provide a valid input"
